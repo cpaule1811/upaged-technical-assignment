@@ -2,6 +2,34 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+.heading {
+  padding: 10px 30px 0 30px;
+}
+
+h2 {
+  font-weight: 700;
+  size: 1.363rem;
+  color: #29334F;
+  margin-bottom: 10px;
+}
+
+.background {
+  height: 100vh;
+  background-color: #d8d8d8;
+}
+
+.shift-card-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 30px;
+  gap: 10px;
 }
 /*# sourceMappingURL=App.css.map */

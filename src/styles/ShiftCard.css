@@ -1,0 +1,157 @@
+.shift-card-container {
+  min-height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+
+.shift-card-container .shift-card-left {
+  height: 100%;
+  background-color: #fff;
+  padding: 20px;
+  -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.15);
+  width: 30%;
+  padding-left: 30px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: relative;
+}
+
+.shift-card-container .shift-card-left .first {
+  border-top-left-radius: 2px;
+}
+
+.shift-card-container .shift-card-left .colored-strip-blue {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 100%;
+  width: 12px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #29334F;
+}
+
+.shift-card-container .shift-card-left .colored-strip-teal {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 100%;
+  width: 12px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #3AEBB6;
+}
+
+.shift-card-container .shift-card-left .rate {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #29334F;
+}
+
+.shift-card-container .shift-card-right {
+  height: 100%;
+  background-color: #fff;
+  padding: 20px;
+  -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.15);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 70%;
+}
+
+.shift-card-container .shift-card-right .first {
+  border-top-right-radius: 2px;
+}
+
+.shift-card-container .shift-card-right .inner-shift-card-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.right-content-wapper :first-child {
+  color: #29334F;
+  line-height: 1.5rem;
+}
+
+.button-wrapper {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.button-wrapper button {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border-radius: 2px;
+  height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 5px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.15);
+}
+
+.button-wrapper button:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.button-wrapper :first-child {
+  color: #29334F;
+  background-color: #fff;
+  border: 1px solid #29334F;
+}
+
+.button-wrapper :last-child {
+  color: #fff;
+  background-color: #29334F;
+  border: none;
+}
+
+.card-content {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.star-wrapper {
+  margin-left: -2px;
+  margin-bottom: 3px;
+}
+
+.date-icon-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+.date-icon-wrapper .date {
+  color: #29334F;
+  font-weight: 500;
+}
+
+@media (max-width: 700px) {
+  .shift-card-container {
+    height: 100%;
+  }
+}
+/*# sourceMappingURL=ShiftCard.css.map */

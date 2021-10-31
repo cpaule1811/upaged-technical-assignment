@@ -1,6 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap");
+@import "./Variables.scss";
+@import "./mixins.scss";
 
-*  {
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.heading { 
+    padding: 10px 30px 0 30px;
+}
+
+h2 {
+  @include heading1;
+}
+
+.background {
+  height: 100vh;
+  background-color: $backgroundGrey;
+}
+
+.shift-card-list { 
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+    gap: 10px;
 }
