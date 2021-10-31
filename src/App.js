@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import ShiftCard from "./components/ShiftCard"
+import DatePagination from "./components/DatePagination";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchShiftsInvited } from "./reducers/shiftsInvitedSlice";
@@ -30,6 +31,7 @@ function App() {
         <ShiftCard key={i} {...shift} invited/>
       ))}
     </div>
+    <DatePagination/>
     <div className="shift-card-list">
       {upcomingShifts.map((shift, i) => (
         <ShiftCard key={i} {...shift} index={i}/>
