@@ -1,0 +1,70 @@
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 35px;
+  height: 89px;
+  width: 100vw;
+}
+
+.navbar img {
+  width: 155px;
+  height: 39px;
+}
+
+.navbar .tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-left: 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: flex-start;
+  gap: 5%;
+  height: 100%;
+  font-weight: 500;
+}
+
+.navbar .tabs a {
+  color: #29334F;
+  cursor: pointer;
+}
+
+.navbar .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 130px;
+  gap: 20px;
+}
+
+.navbar .profile .profile-img-container {
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.1);
+  width: 50px;
+  height: 50px;
+  padding: 1px;
+}
+
+.navbar .profile .profile-img-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.navbar .profile div {
+  color: #29334F;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=Navbar.css.map */
