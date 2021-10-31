@@ -1,4 +1,78 @@
+@import './Variables.scss';
+
 @mixin flex  {
     display: flex;
     align-items: center;
+}
+
+@mixin coloredStrip { 
+        border-top-left-radius: $borderRadius;
+        border-bottom-left-radius: $borderRadius;
+        height: 100%;
+        width: 12px;
+        top: 0;
+        left: 0;
+        position: absolute;
+}
+
+@mixin shiftCardPanes { 
+    height: 100%;
+    background-color: $whiteColor;
+    padding: 20px;
+    box-shadow: $boxShadow;
+}
+
+@mixin heading1 { 
+    font-weight: 700;
+    size: 1.363rem;
+    color: $darkBlueColor;
+    margin-bottom: 10px;
+}
+
+@mixin heading2 { 
+    font-weight: 500;
+    font-size: 17px;
+}
+
+@mixin cardBody { 
+    font-weight: 300;
+    font-size: 12px;
+}
+
+@mixin cardHeader { 
+    color: $darkBlueColor;
+    line-height: 1.5rem;
+}
+
+@mixin cardHeader2 { 
+    color: $darkBlueColor;
+    font-weight: 500;
+}
+
+@mixin buttonStyle { 
+    box-sizing: content-box;
+    border-radius: 2px;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;  
+    margin: 0 5px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: $boxShadow;
+    &:hover { 
+        transform: scale(1.02);
+    }
+}
+
+@mixin darkButtonStyle { 
+   color: $whiteColor;
+   background-color: $darkBlueColor;
+   border: none;
+}
+
+@mixin lightButtonStyle { 
+    color: $darkBlueColor;
+    background-color: $whiteColor;
+    border: 1px solid $darkBlueColor;
 }
