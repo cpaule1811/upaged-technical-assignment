@@ -1,0 +1,17 @@
+@import './mixins.scss';
+@import './Variables.scss';
+
+.date-pagination-wrapper {
+    @include flex;
+    justify-content: center;
+    margin: 30px;
+    gap: 10px;
+    span {
+        @include heading2
+    }
+    div {
+        padding: 5px 3px 3px 3px;
+        cursor: pointer;
+        border: 1px solid rgba(0,0,0,0.1);
+    }
+}

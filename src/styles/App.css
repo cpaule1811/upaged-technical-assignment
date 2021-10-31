@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.heading {
+  padding: 10px 30px 0 30px;
+}
+
+h2 {
+  font-weight: 700;
+  size: 1.363rem;
+  color: #29334F;
+  margin-bottom: 10px;
+}
+
+.background {
+  min-height: 100vh;
+  height: auto;
+  background-color: #d8d8d8;
+  overflow-x: hidden;
+}
+
+.shift-card-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 30px;
+  gap: 10px;
+}
+
+@media (max-width: 700px) {
+  .shift-card-list {
+    padding: 10px;
+  }
+}
+/*# sourceMappingURL=App.css.map */

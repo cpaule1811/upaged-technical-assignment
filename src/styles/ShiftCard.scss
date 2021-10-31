@@ -1,0 +1,99 @@
+@import "./Variables.scss";
+@import "./mixins.scss";
+
+.shift-card-container {
+  min-height: 120px;
+
+  @include flex;
+  gap: 5px;
+
+  .shift-card-left {
+    @include shiftCardPanes;
+    width: 30%;
+    padding-left: 30px;
+    border-top-left-radius: $borderRadius;
+    border-bottom-left-radius: $borderRadius;
+    position: relative;
+   
+    .colored-strip-blue {
+      @include coloredStrip;
+      background-color: $darkBlueColor;
+    }
+    .colored-strip-teal {
+      @include coloredStrip;
+      background-color: $tealColor;
+    }
+    .rate {
+      margin-top: 5px;
+      font-size: 14px;
+      font-weight: 500;
+      color: $darkBlueColor;
+    }
+  }
+
+  .shift-card-right {
+    @include shiftCardPanes;
+    border-top-right-radius: $borderRadius;
+    border-bottom-right-radius: $borderRadius;
+    width: 70%;
+    .inner-shift-card-right {
+      display: flex;
+      height: 100%;
+      justify-content: space-between;
+    }
+  }
+}
+
+.right-content-wapper {
+  & :first-child {
+    @include cardHeader;
+  }
+}
+
+.button-wrapper {
+  align-self: center;
+  button {
+    @include buttonStyle;
+  }
+  & :first-child {
+    @include lightButtonStyle;
+  }
+  & :last-child {
+    @include darkButtonStyle;
+  }
+}
+
+.card-content {
+  @include cardBody;
+}
+
+.star-wrapper {
+  margin-left: -2px;
+  margin-bottom: 3px;
+}
+
+.date-icon-wrapper {
+  @include flex;
+  gap: 5px;
+  margin-bottom: 5px;
+  .date {
+    @include cardHeader2;
+  }
+} 
+
+@media (max-width: 700px) { 
+    .shift-card-container { 
+        height: 200px;
+    }
+}
+@media (max-width: 500px) { 
+    .inner-shift-card-right {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+      }
+      .shift-card-container { 
+        height: 300px;
+    }
+}
+

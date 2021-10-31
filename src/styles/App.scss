@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap");
+@import "./Variables.scss";
+@import "./mixins.scss";
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.heading { 
+    padding: 10px 30px 0 30px;
+}
+
+h2 {
+  @include heading1;
+}
+
+.background {
+  min-height: 100vh;
+  height: auto;
+  background-color: $backgroundGrey;
+  overflow-x: hidden;
+}
+
+.shift-card-list { 
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+    gap: 10px;
+}
+
+@media (max-width: 700px) {
+  .shift-card-list {
+     padding: 10px;
+  }
+}
