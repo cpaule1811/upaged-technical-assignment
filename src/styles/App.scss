@@ -16,8 +16,10 @@ h2 {
 }
 
 .background {
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   background-color: $backgroundGrey;
+  overflow-x: hidden;
 }
 
 .shift-card-list { 
