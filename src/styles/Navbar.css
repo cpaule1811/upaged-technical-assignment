@@ -35,6 +35,7 @@
 .navbar .tabs a {
   color: #29334F;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .navbar .profile {
@@ -55,6 +56,7 @@
   width: 50px;
   height: 50px;
   padding: 1px;
+  position: relative;
 }
 
 .navbar .profile .profile-img-container img {
@@ -63,10 +65,40 @@
   border-radius: 50%;
 }
 
+.navbar .profile .profile-img-container .tick {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+}
+
 .navbar .profile div {
   color: #29334F;
   font-weight: 700;
   font-size: 14px;
   cursor: pointer;
+}
+
+.navbar .menu {
+  display: none;
+  width: 35px;
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navbar .tabs {
+    display: none;
+  }
+  .navbar .profile {
+    display: none;
+  }
+  .navbar .menu {
+    display: block;
+  }
 }
 /*# sourceMappingURL=Navbar.css.map */

@@ -14,9 +14,7 @@
     border-top-left-radius: $borderRadius;
     border-bottom-left-radius: $borderRadius;
     position: relative;
-    .first { 
-        border-top-left-radius: 2px;
-    }
+   
     .colored-strip-blue {
       @include coloredStrip;
       background-color: $darkBlueColor;
@@ -38,9 +36,6 @@
     border-top-right-radius: $borderRadius;
     border-bottom-right-radius: $borderRadius;
     width: 70%;
-    .first { 
-        border-top-right-radius: 2px; 
-    }
     .inner-shift-card-right {
       display: flex;
       height: 100%;
@@ -84,16 +79,21 @@
   .date {
     @include cardHeader2;
   }
-}
+} 
 
 @media (max-width: 700px) { 
     .shift-card-container { 
+        height: 200px;
+    }
+}
+@media (max-width: 500px) { 
+    .inner-shift-card-right {
+        display: flex;
         height: 100%;
+        flex-direction: column;
+      }
+      .shift-card-container { 
+        height: 300px;
     }
 }
 
-// @media (max-width: 500px) { 
-//     .shift-card-container { 
-//         height: 100%;
-//     }
-// }

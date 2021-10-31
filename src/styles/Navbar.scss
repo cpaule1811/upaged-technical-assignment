@@ -1,5 +1,5 @@
-@import './Variables.scss';
-@import './mixins.scss';
+@import "./Variables.scss";
+@import "./mixins.scss";
 
 .navbar {
   @include flex;
@@ -23,6 +23,7 @@
     a {
       color: $darkBlueColor;
       cursor: pointer;
+      text-decoration: none;
     }
   }
   .profile {
@@ -35,11 +36,18 @@
       width: 50px;
       height: 50px;
       padding: 1px;
-
+      position: relative;
       img {
         width: 100%;
         height: 100%;
         border-radius: 50%;
+      }
+      .tick {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 20px;
+        height: 20px;
       }
     }
     div {
@@ -49,8 +57,23 @@
       cursor: pointer;
     }
   }
+  .menu {
+    display: none;
+    width: 35px;
+  }
 }
 
-@media (max-width: 700px) { 
-  //hide right side show menu bars
+@media (max-width: 700px) {
+  .navbar {
+    justify-content: space-between;
+    .tabs {
+      display: none;
+    }
+    .profile {
+      display: none;
+    }
+    .menu {
+      display: block;
+    }
+  }
 }

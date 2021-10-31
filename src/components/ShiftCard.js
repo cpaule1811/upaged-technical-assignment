@@ -24,10 +24,6 @@ function ShiftCard({
     return invited ? "colored-strip-teal" : "colored-strip-blue";
   };
 
-  const isFirst = (index) => {
-    return index === 0 ? " first" : "";
-  };
-
   //returns img element depending on what time period the shift is at
   const getIcon = () => {
     switch (period) {
@@ -45,7 +41,7 @@ function ShiftCard({
   return (
     <div className="shift-card-container">
       <div className="shift-card-left">
-        <div className={colorStrip(invited) + isFirst(index)} />
+        <div className={colorStrip(invited)} />
         <div className="date-icon-wrapper">
           <div className="date">{date}</div>
           {!invited && getIcon()}
@@ -56,7 +52,7 @@ function ShiftCard({
         <div className="card-content">{type}</div>
         <div className="rate">${hourlyPay}/hr</div>
       </div>
-      <div className={"shift-card-right" + isFirst(index)}>
+      <div className="shift-card-right" >
         <div className="inner-shift-card-right">
           <div className="right-content-wapper">
             <div>{hospitalName}</div>

@@ -34,4 +34,10 @@ h2 {
   padding: 10px 30px;
   gap: 10px;
 }
+
+@media (max-width: 700px) {
+  .shift-card-list {
+    padding: 10px;
+  }
+}
 /*# sourceMappingURL=App.css.map */

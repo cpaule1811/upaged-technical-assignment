@@ -22,10 +22,6 @@
   position: relative;
 }
 
-.shift-card-container .shift-card-left .first {
-  border-top-left-radius: 2px;
-}
-
 .shift-card-container .shift-card-left .colored-strip-blue {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -66,10 +62,6 @@
   width: 70%;
 }
 
-.shift-card-container .shift-card-right .first {
-  border-top-right-radius: 2px;
-}
-
 .shift-card-container .shift-card-right .inner-shift-card-right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -98,7 +90,7 @@
   height: 30px;
   padding-left: 10px;
   padding-right: 10px;
-  margin: 0 5px;
+  margin: 5px;
   font-size: 12px;
   font-weight: 500;
   cursor: pointer;
@@ -151,7 +143,23 @@
 
 @media (max-width: 700px) {
   .shift-card-container {
+    height: 200px;
+  }
+}
+
+@media (max-width: 500px) {
+  .inner-shift-card-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .shift-card-container {
+    height: 300px;
   }
 }
 /*# sourceMappingURL=ShiftCard.css.map */
